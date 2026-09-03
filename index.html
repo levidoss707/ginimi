@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levi's Webs | Premium Web Development & Digital Engineering</title>
+  
+  <meta name="description" content="Levi's Webs crafts high-performance websites, dark-mode web applications, and e-commerce platforms in Erode, Tamil Nadu.">
+  <meta property="og:title" content="Levi's Webs | Modern Web Engineering">
+  <meta property="og:description" content="Custom web solutions engineered for speed, conversion, and smooth interaction.">
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+  <!-- Supabase JS Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#08080a] text-gray-100 relative min-h-screen selection:bg-purple-500 selection:text-white">
+
+  <!-- Glow Cursor Overlay -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Background Particle Engine -->
+  <canvas id="bg-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+  <div class="relative z-10 flex flex-col min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full backdrop-blur-xl bg-[#08080a]/80 border-b border-white/10 z-50">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="#" class="text-2xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-cyan-400 to-white">
+          LEVI'S WEBS<span class="text-purple-500">.</span>
+        </a>
+        
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+          <a href="#services" class="hover:text-purple-400 transition">Services</a>
+          <a href="#calculator" class="hover:text-purple-400 transition">Cost Estimator</a>
+          <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+        </div>
+
+        <a href="https://wa.me/918438615726?text=Hi%20Levi's%20Webs,%20I'd%20like%20to%20discuss%20a%20website%20project." 
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 text-white font-semibold px-5 py-2.5 rounded-full text-sm transition-all shadow-lg shadow-purple-500/20 active:scale-95">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          <span>Let's Talk</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 hero-glow flex-1 flex items-center">
+      <div class="max-w-5xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-xs font-semibold uppercase tracking-widest mb-8">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+          Erode, Tamil Nadu • Digital Agency
+        </div>
+        
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight mb-8">
+          Crafting High-Performance <br class="hidden sm:inline"/>
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-600">
+            Digital Experiences
+          </span>
+        </h1>
+        
+        <p class="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg mb-10 leading-relaxed">
+          We build modern, fast, and responsive web platforms engineered to convert visitors into long-term clients.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#calculator" 
+             class="w-full sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-all shadow-xl flex items-center justify-center gap-2">
+            <span>Estimate Project Cost</span>
+            <i data-lucide="calculator" class="w-5 h-5"></i>
+          </a>
+          <a href="https://wa.me/918438615726" 
+             target="_blank" rel="noopener"
+             class="w-full sm:w-auto px-8 py-4 border border-white/10 bg-white/5 text-gray-300 font-semibold rounded-full hover:border-white/30 hover:text-white transition-all flex items-center justify-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-green-400"></i>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 px-6 max-w-7xl mx-auto w-full">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Core Capabilities</h2>
+        <p class="text-gray-400">Everything required to build a market-leading web presence.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="tilt-card bg-[#111116] border border-white/10 p-8 rounded-2xl">
+          <div class="w-12 h-12 bg-purple-500/10 border border-purple-500/30 rounded-xl flex items-center justify-center text-purple-400 mb-6">
+            <i data-lucide="code" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Custom Web Apps</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Scalable, fast single-page applications and dashboards optimized for all devices.</p>
+        </div>
+
+        <div class="tilt-card bg-[#111116] border border-white/10 p-8 rounded-2xl">
+          <div class="w-12 h-12 bg-cyan-500/10 border border-cyan-500/30 rounded-xl flex items-center justify-center text-cyan-400 mb-6">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Interactive UI/UX</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Unique visual identities with dark mode aesthetics, fluid transitions, and responsive layouts.</p>
+        </div>
+
+        <div class="tilt-card bg-[#111116] border border-white/10 p-8 rounded-2xl">
+          <div class="w-12 h-12 bg-purple-500/10 border border-purple-500/30 rounded-xl flex items-center justify-center text-purple-400 mb-6">
+            <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">E-Commerce Solutions</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">High-converting online stores built with integrated payment gateways and inventory tracking.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Cost Estimator Widget -->
+    <section id="calculator" class="py-20 px-6 max-w-4xl mx-auto w-full">
+      <div class="bg-[#111116] border border-white/10 p-8 sm:p-12 rounded-3xl relative overflow-hidden">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold mb-3">Instant Cost Estimator</h2>
+          <p class="text-gray-400 text-sm">Select project parameters for a real-time price estimate.</p>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <label class="block text-xs font-semibold uppercase text-gray-400 mb-3">Project Scope</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <button type="button" class="calc-type-btn active p-4 rounded-xl border border-purple-500/50 bg-purple-500/10 text-sm font-semibold text-left transition" data-price="5000" data-label="Landing Page">
+                Landing Page
+              </button>
+              <button type="button" class="calc-type-btn p-4 rounded-xl border border-white/10 bg-black/40 text-sm font-semibold text-left transition" data-price="12000" data-label="Business Web App">
+                Business Web App
+              </button>
+              <button type="button" class="calc-type-btn p-4 rounded-xl border border-white/10 bg-black/40 text-sm font-semibold text-left transition" data-price="20000" data-label="Full E-Commerce Store">
+                E-Commerce Store
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase text-gray-400 mb-3">Add-Ons</label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <label class="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-black/40 text-sm cursor-pointer">
+                <input type="checkbox" class="calc-addon rounded accent-purple-500" data-price="3000" value="Database / Supabase Sync">
+                <span>Database Integration (Supabase)</span>
+              </label>
+              <label class="flex items-center gap-3 p-4 rounded-xl border border-white/10 bg-black/40 text-sm cursor-pointer">
+                <input type="checkbox" class="calc-addon rounded accent-purple-500" data-price="2500" value="SEO & Social Cards">
+                <span>Advanced SEO Optimization</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <span class="text-xs text-gray-400 uppercase font-semibold">Estimated Investment</span>
+              <div class="text-3xl font-extrabold text-cyan-400" id="estimated-price">₹5,000</div>
+            </div>
+            <button id="book-estimate-btn" class="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 text-white font-bold px-8 py-3.5 rounded-xl transition shadow-lg shadow-purple-500/20">
+              Book This Configuration
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supabase Form Section -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto w-full">
+      <div class="bg-[#111116] border border-white/10 p-8 sm:p-12 rounded-3xl">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold mb-3">Start Your Project</h2>
+          <p class="text-gray-400 text-sm">Inquiries save directly to our database for immediate follow-up.</p>
+        </div>
+
+        <form id="contact-form" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Name</label>
+              <input type="text" id="form-name" required placeholder="John Doe" class="w-full bg-[#08080a] border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">WhatsApp / Phone</label>
+              <input type="tel" id="form-phone" required placeholder="+91 8438615726" class="w-full bg-[#08080a] border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Email</label>
+              <input type="email" id="form-email" required placeholder="john@example.com" class="w-full bg-[#08080a] border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Service Needed</label>
+              <select id="form-service" class="w-full bg-[#08080a] border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition text-gray-300">
+                <option value="Landing Page">Landing Page</option>
+                <option value="Business Web App">Business Web App</option>
+                <option value="E-Commerce Store">E-Commerce Store</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Project Message</label>
+            <textarea id="form-message" rows="4" required placeholder="Tell us about your target audience and core requirements..." class="w-full bg-[#08080a] border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition"></textarea>
+          </div>
+
+          <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-500 hover:to-cyan-500 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-purple-500/20">
+            Submit Inquiry
+          </button>
+          
+          <div id="form-status" class="text-center text-sm font-semibold hidden"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-white/10 bg-[#08080a] py-12 px-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">LEVI'S WEBS</span>
+          <p class="text-xs text-gray-400 mt-1">Erode, Tamil Nadu • High-Performance Web Engineering</p>
+        </div>
+
+        <div class="flex items-center gap-6 text-sm text-gray-400">
+          <a href="https://wa.me/918438615726" target="_blank" rel="noopener" class="hover:text-purple-400 flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-cyan-400"></i>
+            <span>+91 8438615726</span>
+          </a>
+          <a href="https://instagram.com/levi.web_dev" target="_blank" rel="noopener" class="hover:text-purple-400 flex items-center gap-2">
+            <i data-lucide="instagram" class="w-4 h-4 text-purple-400"></i>
+            <span>@levi.web_dev</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
