@@ -2,149 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- CRITICAL: Allows natural mobile pinch-zoom without restrictions -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>V. R. Sundaram & Chambers | Advocate & Legal Counsel</title>
-  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- SEO & Local Business Authority -->
+  <title>V. R. Sundaram & Chambers | Advocate & Legal Counsel | Chennai High Court</title>
+  <meta name="description" content="Chambers of Advocate V. R. Sundaram. Providing civil litigation, criminal defence, property dispute resolution, and corporate counsel across Chennai, Madras High Court, and Tamil Nadu." />
+  <meta name="keywords" content="Advocate Chennai, Madras High Court Lawyer, Property Dispute Counsel Chennai, Criminal Defence Advocate Tamil Nadu, Legal Consultation Chennai" />
+  <link rel="canonical" href="https://sundaramlawchambers.in" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="V. R. Sundaram & Chambers | Advocate & Legal Counsel" />
+  <meta property="og:description" content="High-calibre legal advisory, strategic dispute resolution, and litigation services based in Chennai, Tamil Nadu." />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Fonts: Editorial Serif & Pristine Geometric Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
-  <style>
-    :root {
-      --color-base-dark: #0f1115;
-      --color-surface-dark: #16191f;
-      --color-surface-card: #1c2027;
-      --color-surface-elevated: #232832;
-      --color-ivory: #fbf9f5;
-      --color-ivory-dim: #ece8df;
-      --color-ivory-muted: #c9c4b8;
-      --color-brass: #c5a059;
-      --color-border-subtle: rgba(236, 232, 223, 0.08);
-      --color-border-accent: rgba(197, 160, 89, 0.35);
-      --font-editorial: "Cinzel", Georgia, serif;
-      --font-sans: "Plus Jakarta Sans", sans-serif;
-      --container-max: 1320px;
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Schema.org LegalService Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "V. R. Sundaram & Chambers",
+    "description": "Advocate and High Court Litigation Practice in Chennai, Tamil Nadu.",
+    "telephone": "+919840012345",
+    "email": "chambers@sundaramlegal.in",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Chamber No. 14, 2nd Floor, Armenian Street, George Town",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "13.0886",
+      "longitude": "80.2882"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:30",
+      "closes": "19:30"
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--color-base-dark); color: var(--color-ivory-dim); font-family: var(--font-sans); line-height: 1.6; }
-    h1, h2, h3 { font-family: var(--font-editorial); color: var(--color-ivory); }
-    a { color: inherit; text-decoration: none; }
-    .site-container { max-width: var(--container-max); margin: 0 auto; padding: 0 1.5rem; }
-    
-    .bar-notice { background: #08090b; padding: 8px 0; font-size: 0.75rem; color: var(--color-ivory-muted); border-bottom: 1px solid var(--color-border-subtle); }
-    .notice-inner { display: flex; justify-content: space-between; align-items: center; }
-    .notice-link { color: var(--color-brass); text-decoration: underline; }
-
-    .main-header { position: sticky; top: 0; z-index: 100; background: rgba(15, 17, 21, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-border-subtle); }
-    .nav-container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
-    .brand-title { font-family: var(--font-editorial); font-size: 1.3rem; font-weight: 700; }
-    .brand-sub { font-size: 0.6rem; color: var(--color-brass); letter-spacing: 0.2em; display: block; }
-    .brand-loc { font-size: 0.65rem; color: var(--color-ivory-muted); display: block; }
-    
-    .desktop-nav .nav-menu { display: flex; list-style: none; gap: 2rem; font-size: 0.85rem; text-transform: uppercase; }
-    .desktop-nav a:hover { color: var(--color-brass); }
-    .nav-actions-desktop { display: flex; gap: 1rem; align-items: center; }
-
-    .btn-primary, .btn-secondary { padding: 0.75rem 1.5rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer; border-radius: 2px; transition: 0.2s ease; }
-    .btn-primary { background: var(--color-brass); color: #000; border: none; font-weight: 700; }
-    .btn-primary:hover { background: #d8b26e; }
-    .btn-secondary { background: transparent; color: var(--color-ivory); border: 1px solid var(--color-border-subtle); }
-    .btn-secondary:hover { border-color: var(--color-brass); color: var(--color-brass); }
-
-    .mobile-menu-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 4px; }
-    .hamburger-line { width: 22px; height: 2px; background: var(--color-ivory); }
-
-    .hero-section { padding: 4rem 0; border-bottom: 1px solid var(--color-border-subtle); }
-    .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem; align-items: center; }
-    .hero-headline { font-size: clamp(2rem, 3.5vw, 3.5rem); margin: 1rem 0; line-height: 1.15; }
-    .serif-italic { font-style: italic; color: var(--color-brass); }
-    .hero-narrative { color: var(--color-ivory-muted); margin-bottom: 2rem; max-width: 540px; }
-    .hero-cta-group { display: flex; gap: 1rem; margin-bottom: 2rem; }
-    .hero-img { width: 100%; height: 420px; object-fit: cover; border: 1px solid var(--color-border-accent); }
-    .hero-court-callout { background: var(--color-surface-dark); border-left: 2px solid var(--color-brass); padding: 0.8rem 1rem; font-size: 0.8rem; }
-
-    .trust-strip { background: var(--color-surface-dark); padding: 1.5rem 0; border-bottom: 1px solid var(--color-border-subtle); }
-    .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; gap: 1rem; }
-    .trust-value { display: block; font-family: var(--font-editorial); font-size: 1.5rem; color: var(--color-brass); font-weight: bold; }
-    .trust-label { font-size: 0.75rem; text-transform: uppercase; color: var(--color-ivory-muted); }
-
-    .about-section { padding: 4rem 0; border-bottom: 1px solid var(--color-border-subtle); }
-    .about-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 3rem; align-items: center; }
-    .portrait-img { width: 100%; height: 450px; object-fit: cover; border: 1px solid var(--color-border-subtle); }
-    .credentials-box { background: var(--color-surface-card); padding: 1.2rem; border-left: 3px solid var(--color-brass); margin: 1.5rem 0; }
-    .cred-list { list-style: none; margin-top: 0.5rem; font-size: 0.85rem; color: var(--color-ivory-muted); }
-
-    .practice-section { padding: 4rem 0; background: #12151b; border-bottom: 1px solid var(--color-border-subtle); }
-    .practice-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
-    .practice-card { background: var(--color-surface-card); padding: 2rem; border: 1px solid var(--color-border-subtle); }
-    .practice-cta-link { color: var(--color-brass); font-size: 0.8rem; text-transform: uppercase; margin-top: 1rem; display: inline-block; font-weight: 600; }
-
-    .consultation-section { padding: 4rem 0; border-bottom: 1px solid var(--color-border-subtle); }
-    .consultation-card-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; background: var(--color-surface-dark); padding: 3rem; border: 1px solid var(--color-border-accent); }
-    .c-form .form-group { margin-bottom: 1rem; }
-    .c-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .c-form label { display: block; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.3rem; color: var(--color-ivory-muted); }
-    .c-form input, .c-form select, .c-form textarea { width: 100%; background: var(--color-surface-card); border: 1px solid var(--color-border-subtle); color: #fff; padding: 0.75rem; border-radius: 2px; }
-    .form-alert { padding: 0.8rem; margin-bottom: 1rem; font-size: 0.85rem; }
-    .form-alert.success { background: rgba(56, 161, 105, 0.2); color: #68d391; }
-    .form-alert.error { background: rgba(229, 62, 62, 0.2); color: #fc8181; }
-
-    .disclaimer-section { padding: 2rem 0; background: #0c0d10; border-bottom: 1px solid var(--color-border-subtle); font-size: 0.8rem; color: var(--color-ivory-muted); }
-    .main-footer { background: #08090b; padding: 2rem 0; font-size: 0.8rem; color: var(--color-ivory-muted); }
-
-    .desktop-floating-wa { position: fixed; bottom: 2rem; right: 2rem; z-index: 50; }
-    .floating-wa-btn { background: #25d366; color: #fff; border: none; padding: 0.8rem 1.4rem; border-radius: 50px; cursor: pointer; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-    .mobile-action-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; height: 60px; background: #0f1115; border-top: 1px solid var(--color-brass); z-index: 1000; }
-    .action-btn { flex: 1; display: flex; align-items: center; justify-content: center; color: #fff; text-transform: uppercase; font-size: 0.75rem; border: none; background: none; }
-    .mobile-nav-panel { display: none; position: fixed; inset: 0; background: #0f1115; z-index: 2000; padding: 2rem; }
-    .mobile-nav-panel.is-open { display: block; }
-    .mobile-close-btn { background: none; border: none; font-size: 2rem; color: #fff; cursor: pointer; }
-    .mobile-nav-links { list-style: none; margin-top: 2rem; }
-    .mobile-nav-links li { margin-bottom: 1.5rem; }
-    .mobile-nav-links a { font-size: 1.3rem; font-family: var(--font-editorial); }
-
-    @media (max-width: 768px) {
-      .desktop-nav, .nav-actions-desktop, .desktop-floating-wa { display: none !important; }
-      .mobile-menu-toggle, .mobile-action-bar { display: flex; }
-      .hero-grid, .about-grid, .practice-grid, .consultation-card-wrapper { grid-template-columns: 1fr; }
-      .trust-grid { grid-template-columns: 1fr 1fr; }
-      .c-form .form-row { grid-template-columns: 1fr; }
-      body { padding-bottom: 60px; }
-    }
-  </style>
+  }
+  </script>
 </head>
 <body>
 
+  <!-- ================= TOP LEGAL DISCLAIMER BANNER ================= -->
   <aside class="bar-notice">
     <div class="site-container notice-inner">
-      <span>Bar Council of India Disclaimer: This site is for informational purposes only and does not solicit work.</span>
+      <span>Bar Council of India Disclaimer: This website is solely for informational purposes and does not solicit clients or advertise legal services.</span>
       <a href="#disclaimer" class="notice-link">Read Terms</a>
     </div>
   </aside>
 
+  <!-- ================= HEADER / STICKY NAV ================= -->
   <header class="main-header" id="header">
     <div class="site-container nav-container">
-      <a href="#" class="brand-link">
+      <a href="#" class="brand-link" aria-label="Home">
         <span class="brand-sub">CHAMBERS OF</span>
         <span class="brand-title">V. R. SUNDARAM</span>
         <span class="brand-loc">ADVOCATE • HIGH COURT OF MADRAS</span>
       </a>
 
-      <nav class="desktop-nav">
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
         <ul class="nav-menu">
-          <li><a href="#about">The Counsel</a></li>
-          <li><a href="#practice">Practice Areas</a></li>
-          <li><a href="#consultation">Consultation</a></li>
-          <li><a href="#disclaimer">Disclaimer</a></li>
+          <li><a href="#about" class="nav-item">The Counsel</a></li>
+          <li><a href="#practice" class="nav-item">Practice Areas</a></li>
+          <li><a href="#process" class="nav-item">Legal Advisory</a></li>
+          <li><a href="#location" class="nav-item">Chambers</a></li>
+          <li><a href="#faq" class="nav-item">Client FAQ</a></li>
         </ul>
       </nav>
 
+      <!-- Desktop CTAs -->
       <div class="nav-actions-desktop">
-        <button type="button" class="btn-secondary js-whatsapp-trigger">WhatsApp</button>
+        <button type="button" class="btn-secondary js-whatsapp-trigger" data-context="Nav Header">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.532 1.961.815 3.149.815 3.18 0 5.767-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.388-.45-4.82-1.24l-5.18 1.362 1.385-5.056c-.928-1.503-1.46-3.265-1.46-5.066 0-5.518 4.482-10 10-10s10 4.482 10 10z"/></svg>
+          <span>WhatsApp</span>
+        </button>
         <a href="#consultation" class="btn-primary">Book Consultation</a>
       </div>
 
-      <button type="button" class="mobile-menu-toggle" id="menuToggle">
+      <!-- Mobile Menu Hamburger Trigger -->
+      <button type="button" class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavModal">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -152,178 +105,646 @@
     </div>
   </header>
 
-  <div class="mobile-nav-panel" id="mobileNavModal">
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <span class="brand-title">V. R. SUNDARAM</span>
-      <button type="button" class="mobile-close-btn" id="menuClose">&times;</button>
+  <!-- ================= DEDICATED FULL-SCREEN MOBILE NAVIGATION ================= -->
+  <div class="mobile-nav-panel" id="mobileNavModal" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-top">
+        <div class="brand-link">
+          <span class="brand-title">V. R. SUNDARAM</span>
+          <span class="brand-loc">Chennai Chambers</span>
+        </div>
+        <button type="button" class="mobile-close-btn" id="menuClose" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="m-link">The Counsel</a></li>
+        <li><a href="#practice" class="m-link">Practice Areas</a></li>
+        <li><a href="#process" class="m-link">Legal Protocol</a></li>
+        <li><a href="#location" class="m-link">Chambers Location</a></li>
+        <li><a href="#faq" class="m-link">Client FAQ</a></li>
+        <li><a href="#consultation" class="m-link highlight">Request Advisory</a></li>
+      </ul>
+      <div class="mobile-nav-contact">
+        <p class="m-contact-label">Direct Line:</p>
+        <a href="tel:+919840012345" class="m-contact-number js-phone-link">+91 98400 12345</a>
+        <button type="button" class="btn-secondary w-full js-whatsapp-trigger mt-4" data-context="Mobile Menu Panel">
+          Chat on WhatsApp
+        </button>
+      </div>
     </div>
-    <ul class="mobile-nav-links">
-      <li><a href="#about" class="m-link">The Counsel</a></li>
-      <li><a href="#practice" class="m-link">Practice Areas</a></li>
-      <li><a href="#consultation" class="m-link" style="color:var(--color-brass);">Request Consultation</a></li>
-    </ul>
   </div>
 
-  <main>
-    <section class="hero-section">
+  <main id="main-content">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop" aria-hidden="true"></div>
       <div class="site-container hero-grid">
-        <div>
-          <h1 class="hero-headline">Principled Representation. <br /><em class="serif-italic">Uncompromising Advocacy.</em></h1>
-          <p class="hero-narrative">Providing discerning individuals and businesses with rigorous legal counsel across the High Court of Madras and civil/criminal tribunals.</p>
-          <div class="hero-cta-group">
-            <a href="#consultation" class="btn-primary">Schedule Case Assessment</a>
-            <button type="button" class="btn-secondary js-whatsapp-trigger">WhatsApp Counsel</button>
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span class="kicker-dot"></span>
+            <span>Litigation & Corporate Legal Advisory • Chennai, India</span>
           </div>
-          <div class="hero-court-callout">⚖ Appearances: Madras High Court, NCLT Chennai, City Civil Courts.</div>
+          <h1 class="hero-headline">
+            Principled Representation. Clear Strategy. <br />
+            <em class="serif-italic">Uncompromising Advocacy.</em>
+          </h1>
+          <p class="hero-narrative">
+            Providing discerning individuals, family estates, and corporate institutions with rigorous legal counsel in the Madras High Court, City Civil Courts, and appellate tribunals.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#consultation" class="btn-primary btn-large">Schedule Case Assessment</a>
+            <button type="button" class="btn-secondary btn-large js-whatsapp-trigger" data-context="Hero Primary">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.532 1.961.815 3.149.815 3.18 0 5.767-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.388-.45-4.82-1.24l-5.18 1.362 1.385-5.056c-.928-1.503-1.46-3.265-1.46-5.066 0-5.518 4.482-10 10-10s10 4.482 10 10z"/></svg>
+              <span>WhatsApp Counsel</span>
+            </button>
+          </div>
+          <div class="hero-court-callout">
+            <span class="court-icon">⚖</span>
+            <span>Regular Appearances at: High Court of Judicature at Madras, NCLT Chennai, & Debt Recovery Tribunals.</span>
+          </div>
         </div>
-        <div>
-          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85" alt="Law Chambers" class="hero-img" />
+
+        <div class="hero-visual-frame">
+          <div class="editorial-card-wrapper">
+            <div class="image-inner">
+              <img 
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85" 
+                alt="Law books, gavel, and legal volumes in a Chennai legal chamber" 
+                class="hero-img"
+                loading="eager"
+              />
+            </div>
+            <div class="editorial-caption">
+              <span class="caption-lead">Founding Counsel</span>
+              <span class="caption-title">Senior Advocate Panel</span>
+              <p class="caption-meta">Bar Council of Tamil Nadu & Puducherry</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ================= TRUST BADGE / CREDIBILITY STRIP ================= -->
     <section class="trust-strip">
       <div class="site-container trust-grid">
-        <div class="trust-item"><span class="trust-value">22+</span><span class="trust-label">Years of Standing</span></div>
-        <div class="trust-item"><span class="trust-value">Civil & Criminal</span><span class="trust-label">Dual Practice</span></div>
-        <div class="trust-item"><span class="trust-value">George Town</span><span class="trust-label">Chennai Chambers</span></div>
-        <div class="trust-item"><span class="trust-value">Confidential</span><span class="trust-label">Client Privilege</span></div>
+        <div class="trust-item">
+          <span class="trust-value">22+</span>
+          <span class="trust-label">Years of Standing at the Bar</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <span class="trust-value">Civil & Criminal</span>
+          <span class="trust-label">Dual Practice Mastery</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <span class="trust-value">George Town</span>
+          <span class="trust-label">High Court Chambers Hub</span>
+        </div>
+        <div class="trust-divider" aria-hidden="true"></div>
+        <div class="trust-item">
+          <span class="trust-value">Confidential</span>
+          <span class="trust-label">Attorney-Client Privilege Guarantee</span>
+        </div>
       </div>
     </section>
 
+    <!-- ================= ABOUT THE ADVOCATE ================= -->
     <section class="about-section" id="about">
       <div class="site-container about-grid">
-        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80" alt="Advocate" class="portrait-img" />
-        <div>
-          <h2 style="font-size:2rem; margin-bottom:1rem;">Strategic Clarity for Complex Litigation</h2>
-          <p style="color:var(--color-ivory-muted); line-height:1.7;">Over two decades of courtroom agility and structured advisory in Chennai, ensuring high-stakes civil and criminal matters receive detailed personal scrutiny.</p>
-          <div class="credentials-box">
-            <strong>Admissions:</strong> Bar Council of Tamil Nadu & Puducherry (2002)<br />
-            <strong>Primary Forums:</strong> Madras High Court, NCLT Chennai, DRT
+        <div class="about-imagery">
+          <div class="portrait-card">
+            <img 
+              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80" 
+              alt="Advocate V. R. Sundaram reviewing legal briefs in chamber library" 
+              class="portrait-img"
+              loading="lazy"
+            />
           </div>
-          <a href="#consultation" class="btn-primary">Book Consultation</a>
+          <div class="seal-badge">
+            <span class="seal-circle">VERITAS ET IUSTITIA</span>
+            <span class="seal-center">LEX</span>
+          </div>
+        </div>
+
+        <div class="about-text-content">
+          <div class="section-tag">About the Advocate</div>
+          <h2 class="section-title">Strategic Clarity for Complex Jurisdictional Challenges.</h2>
+          <p class="lead-paragraph">
+            Advocate V. R. Sundaram brings over two decades of courtroom agility and structured legal advisory to individuals, family offices, and commercial enterprises.
+          </p>
+          <p class="body-paragraph">
+            Trained under senior stalwarts of the Madras Bar, his approach synthesizes exhaustive evidentiary appraisal with clear, pragmatic litigation strategies. Every case is treated with deep personal scrutiny — avoiding bureaucratic dilution while ensuring strict adherence to the standards of Indian procedural law.
+          </p>
+          
+          <div class="credentials-box">
+            <h3 class="cred-heading">Admissions & Key Focus</h3>
+            <ul class="cred-list">
+              <li><strong>Bar Enrollment:</strong> Bar Council of Tamil Nadu & Puducherry (2002)</li>
+              <li><strong>Courts:</strong> Madras High Court (Principal Bench & Madurai Bench), City Civil Courts</li>
+              <li><strong>Philosophy:</strong> Unambiguous risk assessment before protracted litigation</li>
+            </ul>
+          </div>
+
+          <div class="about-actions">
+            <a href="#consultation" class="btn-primary">Request Preliminary Conference</a>
+            <a href="tel:+919840012345" class="btn-secondary js-phone-link">Call Chamber Desk</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ================= PRACTICE AREAS ================= -->
     <section class="practice-section" id="practice">
       <div class="site-container">
-        <h2 style="font-size:2rem; text-align:center;">Primary Areas of Legal Practice</h2>
+        <div class="section-header-editorial">
+          <div>
+            <div class="section-tag">Core Disciplines</div>
+            <h2 class="section-title">Primary Areas of Legal Practice</h2>
+          </div>
+          <p class="section-lead-summary">
+            Specialized legal services anchored by deep statutory command of Tamil Nadu local enactments and Indian federal legislation.
+          </p>
+        </div>
+
+        <!-- Practice Grid -->
         <div class="practice-grid">
+          <!-- Card 1 -->
           <article class="practice-card">
-            <h3>Civil Litigation & Property</h3>
-            <p style="font-size:0.85rem; color:var(--color-ivory-muted); margin:0.8rem 0;">Ancestral title claims, partition suits, injunctions, and RERA disputes.</p>
-            <a href="#consultation" class="practice-cta-link">Inquire &rarr;</a>
+            <div class="card-num">01</div>
+            <h3 class="practice-name">Civil Litigation & Property Disputes</h3>
+            <p class="practice-desc">
+              Comprehensive counsel on title scrutiny, partition suits, boundary demarcations, ancestral property partition, injunctions, and declaratory actions under the Specific Relief Act.
+            </p>
+            <ul class="practice-bullet-list">
+              <li>Ancestral Title & Succession Claims</li>
+              <li>Declaration Suits & Specific Performance</li>
+              <li>RERA Filings & Developer Disputes</li>
+            </ul>
+            <a href="#consultation" class="practice-cta-link" data-area="Property & Civil Litigation">Inquire Regarding Property &rarr;</a>
           </article>
+
+          <!-- Card 2 -->
           <article class="practice-card">
-            <h3>Criminal Defence & Bail</h3>
-            <p style="font-size:0.85rem; color:var(--color-ivory-muted); margin:0.8rem 0;">High Court anticipatory bail, regular bail petitions, trial advocacy, and FIR quashing.</p>
-            <a href="#consultation" class="practice-cta-link">Inquire &rarr;</a>
+            <div class="card-num">02</div>
+            <h3 class="practice-name">Criminal Defence & Bail Jurisprudence</h3>
+            <p class="practice-desc">
+              Vigorous courtroom advocacy for regular bail, anticipatory bail before the High Court of Madras, trial defence, quashing of FIRs under Section 482 of the CrPC / BNSS, and appellate revisions.
+            </p>
+            <ul class="practice-bullet-list">
+              <li>Anticipatory & Regular Bail Petitions</li>
+              <li>White-Collar Crime & Economic Offences</li>
+              <li>Criminal Revision Petitions & Appeals</li>
+            </ul>
+            <a href="#consultation" class="practice-cta-link" data-area="Criminal Defence & Bail">Inquire Regarding Criminal Defence &rarr;</a>
           </article>
+
+          <!-- Card 3 -->
           <article class="practice-card">
-            <h3>Corporate & Commercial</h3>
-            <p style="font-size:0.85rem; color:var(--color-ivory-muted); margin:0.8rem 0;">Commercial disputes, NCLT insolvency proceedings, and Sec 138 NI Act matters.</p>
-            <a href="#consultation" class="practice-cta-link">Inquire &rarr;</a>
+            <div class="card-num">03</div>
+            <h3 class="practice-name">Corporate & Commercial Advisory</h3>
+            <p class="practice-desc">
+              Structuring commercial agreements, shareholder disputes, insolvency filings before NCLT Chennai bench, breach of contract proceedings, and Section 138 NI Act dishonour proceedings.
+            </p>
+            <ul class="practice-bullet-list">
+              <li>NCLT Insolvency & Resolution Litigations</li>
+              <li>Negotiable Instruments / Cheque Bounce</li>
+              <li>Contract Drafting & Commercial Arbitration</li>
+            </ul>
+            <a href="#consultation" class="practice-cta-link" data-area="Corporate & Commercial">Inquire Regarding Corporate Practice &rarr;</a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="practice-card">
+            <div class="card-num">04</div>
+            <h3 class="practice-name">Family Law & Matrimonial Settlements</h3>
+            <p class="practice-desc">
+              Discreet and tactful navigation of divorce proceedings, mutual consent petitions, permanent alimony determinations, child custody agreements, and contested domestic violence applications.
+            </p>
+            <ul class="practice-bullet-list">
+              <li>Mutual & Contested Divorce Petitions</li>
+              <li>Custody, Visitation & Maintenance Claims</li>
+              <li>Pre-litigation Family Mediation</li>
+            </ul>
+            <a href="#consultation" class="practice-cta-link" data-area="Family & Matrimonial">Inquire Regarding Matrimonial Law &rarr;</a>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="practice-card">
+            <div class="card-num">05</div>
+            <h3 class="practice-name">Constitutional & Writ Jurisdiction</h3>
+            <p class="practice-desc">
+              Filing and arguing Writ Petitions (Certiorari, Mandamus, Quo Warranto, Habeas Corpus) under Article 226 of the Constitution of India challenging arbitrary executive state action.
+            </p>
+            <ul class="practice-bullet-list">
+              <li>Writ Petitions against Government Authorities</li>
+              <li>Tender Disputes & Statutory Arbitrariness</li>
+              <li>Quashing Unconstitutional Administrative Orders</li>
+            </ul>
+            <a href="#consultation" class="practice-cta-link" data-area="Writ & Constitutional Law">Inquire Regarding Writs &rarr;</a>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="practice-card">
+            <div class="card-num">06</div>
+            <h3 class="practice-name">Real Estate Legal Vetting</h3>
+            <p class="practice-desc">
+              Exhaustive 30-year parent document search, encumbrance verification, patta/chitta scrutiny, CMDA/DTCP planning permission reviews, and execution of watertight conveyance deeds.
+            </p>
+            <ul class="practice-bullet-list">
+              <li>30-Year Encumbrance Search & Clearance Reports</li>
+              <li>CMDA / DTCP Layout Approval Vetting</li>
+              <li>Drafting of Sale Deeds, Settlements & Wills</li>
+            </ul>
+            <a href="#consultation" class="practice-cta-link" data-area="Real Estate Vetting">Inquire Regarding Document Vetting &rarr;</a>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- ================= METHODOLOGY / PROCESS ================= -->
+    <section class="process-section" id="process">
+      <div class="site-container">
+        <div class="section-tag center">Our Legal Protocol</div>
+        <h2 class="section-title center">Disciplined, Predictable Case Handling</h2>
+        <p class="section-lead-summary center max-w-ch">
+          Legal matters require methodological cold scrutiny before emotional escalation. Here is how we handle your brief:
+        </p>
+
+        <div class="process-timeline">
+          <!-- Step 1 -->
+          <div class="process-step">
+            <div class="step-badge">Stage 01</div>
+            <h3 class="step-title">Factual Scrutiny</h3>
+            <p class="step-detail">
+              We review chronological facts, documentation, correspondence, and initial filings without making unsubstantiated promises.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step">
+            <div class="step-badge">Stage 02</div>
+            <h3 class="step-title">Jurisdictional Strategy</h3>
+            <p class="step-detail">
+              Identifying the exact legal remedy: whether summary settlement, pre-litigation mediation, or instituting immediate contentious proceedings.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step">
+            <div class="step-badge">Stage 03</div>
+            <h3 class="step-title">Precision Drafting</h3>
+            <p class="step-detail">
+              Drafting plaints, petitions, and affidavits with rigorous evidentiary backing, eliminating procedural loopholes before the bench.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step">
+            <div class="step-badge">Stage 04</div>
+            <h3 class="step-title">Courtroom Advocacy</h3>
+            <p class="step-detail">
+              Dedicated personal appearances before courtrooms and tribunals, supplemented by structured hearing updates to the client.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONSULTATION BOOKING SECTION ================= -->
     <section class="consultation-section" id="consultation">
       <div class="site-container">
         <div class="consultation-card-wrapper">
-          <div>
-            <h2 style="font-size:2rem; margin-bottom:1rem;">Request Consultation</h2>
-            <p style="color:var(--color-ivory-muted); margin-bottom:1.5rem;">Office: Chamber No. 14, Armenian Street, George Town, Chennai – 600001.</p>
-            <p style="color:var(--color-brass);">Urgent matter? Call: +91 98400 12345</p>
-          </div>
-          <form id="consultationForm" class="c-form">
-            <div id="formAlert" class="form-alert" style="display:none;"></div>
-            <div class="form-group"><label>Your Name</label><input type="text" id="clientName" required /></div>
-            <div class="form-row">
-              <div class="form-group"><label>Phone</label><input type="tel" id="clientPhone" required /></div>
-              <div class="form-group">
-                <label>Category</label>
-                <select id="legalArea">
-                  <option>Property Dispute</option>
-                  <option>Criminal Defence / Bail</option>
-                  <option>Commercial / Corporate</option>
-                </select>
+          <div class="consultation-info">
+            <div class="section-tag">Formal Advisory</div>
+            <h2 class="section-title">Schedule a Legal Consultation</h2>
+            <p class="consult-intro">
+              Initial consultations are conducted at our George Town Chambers or via secure video conference for out-of-station clients.
+            </p>
+            
+            <div class="consult-points">
+              <div class="c-point">
+                <span class="c-point-icon">✓</span>
+                <div>
+                  <strong>Complete Confidentiality</strong>
+                  <p>All shared records remain protected under professional legal privilege.</p>
+                </div>
+              </div>
+              <div class="c-point">
+                <span class="c-point-icon">✓</span>
+                <div>
+                  <strong>Document Analysis</strong>
+                  <p>In-person inspection of parent title deeds, contracts, or court notices.</p>
+                </div>
+              </div>
+              <div class="c-point">
+                <span class="c-point-icon">✓</span>
+                <div>
+                  <strong>No Hidden Undertakings</strong>
+                  <p>Transparent evaluation of legal merits, timelines, and anticipated costs.</p>
+                </div>
               </div>
             </div>
-            <div class="form-group"><label>Brief Issue</label><textarea id="caseSummary" rows="3" required></textarea></div>
-            <button type="submit" class="btn-primary" style="width:100%;">Submit & Open WhatsApp</button>
-          </form>
+
+            <div class="direct-callout">
+              <span>Urgent Court Bail or Vacation Matter?</span>
+              <a href="tel:+919840012345" class="urgent-link js-phone-link">Call Chambers Urgently: +91 98400 12345</a>
+            </div>
+          </div>
+
+          <!-- Consultation Form -->
+          <div class="consultation-form-panel">
+            <form id="consultationForm" class="c-form" novalidate>
+              <h3 class="form-title">Consultation Request Slip</h3>
+              <p class="form-subtitle">Fill out your matter summary. Our clerk will confirm the consultation slot.</p>
+
+              <!-- Feedback / Alert message container -->
+              <div id="formAlert" class="form-alert" role="alert" style="display:none;"></div>
+
+              <div class="form-group">
+                <label for="clientName">Full Legal Name <span class="req">*</span></label>
+                <input type="text" id="clientName" name="clientName" placeholder="e.g., Sundararajan K." required autocomplete="name" />
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientPhone">Phone Number <span class="req">*</span></label>
+                  <input type="tel" id="clientPhone" name="clientPhone" placeholder="10-digit mobile number" required autocomplete="tel" />
+                  <span class="field-error" id="phoneError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="clientEmail">Email Address</label>
+                  <input type="email" id="clientEmail" name="clientEmail" placeholder="yourname@domain.com" autocomplete="email" />
+                  <span class="field-error" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="legalArea">Practice Domain <span class="req">*</span></label>
+                <select id="legalArea" name="legalArea" required>
+                  <option value="" disabled selected>Select Primary Category</option>
+                  <option value="Property Disputes & Civil Litigation">Property Disputes & Civil Litigation</option>
+                  <option value="Criminal Defence & Bail Jurisprudence">Criminal Defence & Bail</option>
+                  <option value="Corporate, Commercial & NCLT">Corporate & Commercial Law</option>
+                  <option value="Family, Custody & Matrimonial">Family & Matrimonial</option>
+                  <option value="High Court Writ Jurisdiction">Constitutional / High Court Writ</option>
+                  <option value="Legal Document Vetting">Real Estate Document Vetting</option>
+                  <option value="Other Legal Matter">Other Legal Inquiry</option>
+                </select>
+                <span class="field-error" id="areaError"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="prefDate">Preferred Consultation Date <span class="req">*</span></label>
+                  <input type="date" id="prefDate" name="prefDate" required />
+                  <span class="field-error" id="dateError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="prefSlot">Preferred Time Window <span class="req">*</span></label>
+                  <select id="prefSlot" name="prefSlot" required>
+                    <option value="" disabled selected>Select Window</option>
+                    <option value="Morning (10:30 AM - 01:00 PM)">Morning (10:30 AM - 01:00 PM)</option>
+                    <option value="Evening (05:00 PM - 07:30 PM)">Evening (05:00 PM - 07:30 PM)</option>
+                  </select>
+                  <span class="field-error" id="slotError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="caseSummary">Brief Summary of the Dispute/Inquiry <span class="req">*</span></label>
+                <textarea id="caseSummary" name="caseSummary" rows="3" placeholder="State relevant facts, whether any suit/FIR is pending, and the opposing party (if applicable)..." required></textarea>
+                <span class="field-error" id="summaryError"></span>
+              </div>
+
+              <button type="submit" class="btn-primary w-full" id="submitBtn">
+                <span class="btn-text">Submit Consultation Request</span>
+                <span class="btn-spinner" style="display: none;"></span>
+              </button>
+              <p class="form-foot-note">Submission does not constitute an advocate-client relationship until formal acceptance of the brief.</p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ================= FREQUENTLY ASKED QUESTIONS ================= -->
+    <section class="faq-section" id="faq">
+      <div class="site-container faq-container">
+        <div class="section-tag center">Clarifications</div>
+        <h2 class="section-title center">Client Enquiries & Chamber Protocols</h2>
+        
+        <div class="accordion-list">
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What documents must I prepare before scheduling a preliminary consultation?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>For property disputes: bring the chain of title deeds (parent documents), current encumbrance certificate, patta copies, and municipal tax receipts. For civil or criminal matters: bring any summons, notices, charge sheets, plaints, or impugned orders issued by the court.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Do you accept online / video conferences for overseas or non-resident clients?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. We regularly conduct scheduled video conferences via Google Meet or Zoom for Non-Resident Indians (NRIs) and corporate legal managers whose presence in Chennai is not immediately necessary.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How are retainers and professional fees structured?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Fees are determined strictly according to the complexity, the forum of appearance (Supreme Court, High Court, Civil Court, or Tribunals), the volume of documents, and court drafting requirements. Full transparency is provided following initial brief inspection.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can emergency bail applications be moved during court holidays or vacations?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Urgent criminal matters, stay of demolition, or custody protections can be initiated before Vacation Benches of the Madras High Court or through duty magistrates as permitted by statutory court rules.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAMBERS / LOCATION SECTION ================= -->
+    <section class="location-section" id="location">
+      <div class="site-container location-grid">
+        <div class="location-details">
+          <div class="section-tag">Physical Chambers</div>
+          <h2 class="section-title">Centrally Situated Near the High Court</h2>
+          <p class="lead-paragraph">
+            Our principal office is situated in George Town, within walking distance of the Madras High Court and City Civil Court complex.
+          </p>
+
+          <div class="location-cards">
+            <div class="loc-card">
+              <span class="loc-icon">🏛</span>
+              <div>
+                <strong>Chamber Office Address</strong>
+                <p>Chamber No. 14, 2nd Floor, Armenian Street, George Town, Chennai – 600 001, Tamil Nadu, India.</p>
+              </div>
+            </div>
+
+            <div class="loc-card">
+              <span class="loc-icon">🕒</span>
+              <div>
+                <strong>Chamber Consultation Hours</strong>
+                <p>Monday through Saturday: 09:30 AM – 01:30 PM & 05:00 PM – 08:30 PM.<br />Sundays: strictly by prior appointment.</p>
+              </div>
+            </div>
+
+            <div class="loc-card">
+              <span class="loc-icon">📞</span>
+              <div>
+                <strong>Registry & Appointments</strong>
+                <p>Direct: <a href="tel:+919840012345" class="text-link js-phone-link">+91 98400 12345</a><br />Chambers Email: <a href="mailto:chambers@sundaramlegal.in" class="text-link js-email-link">chambers@sundaramlegal.in</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-cta-group">
+            <a href="https://maps.google.com/?q=Madras+High+Court+George+Town+Chennai" target="_blank" rel="noopener noreferrer" class="btn-primary" id="directionsBtn">
+              Get Chamber Directions
+            </a>
+            <button type="button" class="btn-secondary js-whatsapp-trigger" data-context="Chambers Section">
+              WhatsApp Location Pin
+            </button>
+          </div>
+        </div>
+
+        <!-- Location Map Frame -->
+        <div class="map-frame-wrapper">
+          <div class="map-frame">
+            <iframe 
+              title="Chambers Location Map in George Town, Chennai"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.007629579606!2d80.28588267599026!3d13.08861611277636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526f50b4625b03%3A0xe5110f0cf98eec9b!2sHigh%20Court%20of%20Judicature%20at%20Madras!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <span class="map-legend">Chamber Location: George Town • 200m from High Court Gate 4</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BAR COUNCIL STATUTORY DISCLAIMER ================= -->
     <section class="disclaimer-section" id="disclaimer">
       <div class="site-container">
-        <h4 style="color:var(--color-brass); margin-bottom:0.5rem;">Bar Council of India Statutory Compliance</h4>
-        <p>This website is purely for information. It does not solicit work and does not create an advocate-client relationship.</p>
+        <div class="disclaimer-box">
+          <h4 class="disclaimer-title">Bar Council of India Statutory Compliance</h4>
+          <p class="disclaimer-text">
+            As per the rules of the Bar Council of India, advocates are prohibited from soliciting work or advertising their services through public communication channels. By accessing this website (<strong>sundaramlawchambers.in</strong>), the user acknowledges that:
+          </p>
+          <ul class="disclaimer-list">
+            <li>The user seeks information relating to Advocate V. R. Sundaram for their own information and personal knowledge.</li>
+            <li>There has been no advertisement, personal communication, solicitation, invitation, or inducement of any sort whatsoever by Advocate V. R. Sundaram or any member of the chambers.</li>
+            <li>The contents of this website do not constitute legal advice and do not establish an advocate-client relationship.</li>
+            <li>Any action taken based on information on this website is solely at the user’s risk. In all circumstances, users should consult qualified legal counsel registered under the Advocates Act, 1961.</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="main-footer">
-    <div class="site-container" style="text-align:center;">
-      &copy; 2026 Chambers of V. R. Sundaram. All Rights Reserved.
+    <div class="site-container footer-grid">
+      <div class="footer-col brand-col">
+        <span class="footer-brand-title">V. R. SUNDARAM</span>
+        <span class="footer-brand-sub">Advocate & Legal Counsel</span>
+        <p class="footer-blurb">
+          High Court of Judicature at Madras. Providing principled litigation, dispute strategy, and advisory services.
+        </p>
+        <p class="footer-registered">Registered under the Advocates Act, 1961.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Chambers Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#about">The Counsel</a></li>
+          <li><a href="#practice">Practice Disciplines</a></li>
+          <li><a href="#process">Consultation Protocol</a></li>
+          <li><a href="#location">Chamber Directions</a></li>
+          <li><a href="#faq">Frequently Asked</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Practice Groups</h4>
+        <ul class="footer-links">
+          <li><a href="#practice">High Court Civil Appeals</a></li>
+          <li><a href="#practice">Bail & Criminal Defence</a></li>
+          <li><a href="#practice">Property Litigation Chennai</a></li>
+          <li><a href="#practice">NCLT Corporate Litigation</a></li>
+          <li><a href="#practice">Title Clearance Reports</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4 class="footer-heading">Direct Contact</h4>
+        <p class="footer-contact-line"><strong>Chambers:</strong> Armenian Street, George Town, Chennai 600001</p>
+        <p class="footer-contact-line"><strong>Direct:</strong> <a href="tel:+919840012345" class="js-phone-link">+91 98400 12345</a></p>
+        <p class="footer-contact-line"><strong>Email:</strong> <a href="mailto:chambers@sundaramlegal.in" class="js-email-link">chambers@sundaramlegal.in</a></p>
+        <button type="button" class="btn-secondary w-full js-whatsapp-trigger mt-3" data-context="Footer">
+          Open WhatsApp Chat
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="site-container bottom-flex">
+        <span>&copy; <span id="yearSpan">2026</span> V. R. Sundaram & Chambers. All Rights Reserved.</span>
+        <div class="bottom-links">
+          <a href="#disclaimer">Legal Disclaimer</a>
+          <a href="#disclaimer">Privacy Policy</a>
+          <a href="#disclaimer">Terms of Access</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <aside class="desktop-floating-wa">
-    <button type="button" class="floating-wa-btn js-whatsapp-trigger">WhatsApp Desk</button>
+  <!-- ================= FLOATING DESKTOP WHATSAPP ================= -->
+  <aside class="desktop-floating-wa" aria-label="Direct WhatsApp Contact">
+    <button type="button" class="floating-wa-btn js-whatsapp-trigger" data-context="Desktop Floating Widget">
+      <svg class="wa-icon-large" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.532 1.961.815 3.149.815 3.18 0 5.767-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.388-.45-4.82-1.24l-5.18 1.362 1.385-5.056c-.928-1.503-1.46-3.265-1.46-5.066 0-5.518 4.482-10 10-10s10 4.482 10 10z"/></svg>
+      <span class="floating-wa-text">WhatsApp Legal Desk</span>
+    </button>
   </aside>
 
-  <nav class="mobile-action-bar">
-    <a href="tel:+919840012345" class="action-btn">Call</a>
-    <button type="button" class="action-btn js-whatsapp-trigger">WhatsApp</button>
-    <a href="#consultation" class="action-btn">Consult</a>
+  <!-- ================= MOBILE FIXED BOTTOM ACTION BAR ================= -->
+  <!-- Designed specifically for thumb-zone ergonomics on small viewports -->
+  <nav class="mobile-action-bar" aria-label="Quick Action Bar">
+    <a href="tel:+919840012345" class="action-btn call-btn js-phone-link" aria-label="Call Chamber">
+      <span class="action-icon">📞</span>
+      <span class="action-label">Call</span>
+    </a>
+    <button type="button" class="action-btn wa-btn js-whatsapp-trigger" data-context="Mobile Bottom Bar" aria-label="WhatsApp Advocate">
+      <svg class="action-icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.976.532 1.961.815 3.149.815 3.18 0 5.767-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.518-4.482 10-10 10-1.748 0-3.388-.45-4.82-1.24l-5.18 1.362 1.385-5.056c-.928-1.503-1.46-3.265-1.46-5.066 0-5.518 4.482-10 10-10s10 4.482 10 10z"/></svg>
+      <span class="action-label">WhatsApp</span>
+    </button>
+    <a href="#consultation" class="action-btn book-btn" aria-label="Book Consultation">
+      <span class="action-icon">📅</span>
+      <span class="action-label">Consult</span>
+    </a>
   </nav>
 
-  <script>
-    const CONFIG = {
-      firmName: "Chambers of V. R. Sundaram",
-      whatsappNumber: "919840012345"
-    };
-
-    document.querySelectorAll(".js-whatsapp-trigger").forEach(b => {
-      b.addEventListener("click", () => {
-        window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=Hello%20Advocate,%20I%20would%20like%20to%20enquire%20about%20a%20consultation.`, "_blank");
-      });
-    });
-
-    const mToggle = document.getElementById("menuToggle");
-    const mClose = document.getElementById("menuClose");
-    const mModal = document.getElementById("mobileNavModal");
-    mToggle?.addEventListener("click", () => mModal.classList.add("is-open"));
-    mClose?.addEventListener("click", () => mModal.classList.remove("is-open"));
-    document.querySelectorAll(".m-link").forEach(l => l.addEventListener("click", () => mModal.classList.remove("is-open")));
-
-    document.getElementById("consultationForm")?.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const name = document.getElementById("clientName").value.trim();
-      const phone = document.getElementById("clientPhone").value.trim();
-      const area = document.getElementById("legalArea").value;
-      const alertBox = document.getElementById("formAlert");
-
-      if (!name || phone.length < 10) {
-        alertBox.textContent = "Please enter your name and valid phone.";
-        alertBox.className = "form-alert error";
-        alertBox.style.display = "block";
-        return;
-      }
-
-      alertBox.textContent = "Connecting to Chambers WhatsApp...";
-      alertBox.className = "form-alert success";
-      alertBox.style.display = "block";
-
-      setTimeout(() => {
-        const msg = `*CONSULTATION REQUEST*%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AMatter: ${encodeURIComponent(area)}`;
-        window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${msg}`, "_blank");
-      }, 800);
-    });
-  </script>
+  <!-- JavaScript Bundle -->
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
